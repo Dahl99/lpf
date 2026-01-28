@@ -4,7 +4,7 @@ project(lpf)
 
 set(SOURCES
         main.cpp
-        LowPassFilter.cpp
+        LowpassFilter.cpp
 )
 
 add_executable(lpf ${SOURCES})
