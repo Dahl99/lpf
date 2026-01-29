@@ -1,5 +1,8 @@
 #pragma once
 
+namespace Core
+{
+
 class LowpassFilter
 {
 private:
@@ -11,3 +14,5 @@ public:
 public:
 		double RecalculateOutput(const double input, const double deltaTime);
 };
+
+}

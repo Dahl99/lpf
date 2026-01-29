@@ -2,6 +2,9 @@
 
 #include <cmath>
 
+namespace Core
+{
+
 LowpassFilter::LowpassFilter(const double cutoffFrequency)
 		: m_cutoffFrequency(cutoffFrequency)
 		, m_output(0.0)
@@ -13,4 +16,6 @@ double LowpassFilter::RecalculateOutput(const double input, const double deltaTi
 	m_output += (1-exp(-2 * M_PI * m_cutoffFrequency * deltaTime)) * (input - m_output);
 
 	return m_output;
+}
+
 }
