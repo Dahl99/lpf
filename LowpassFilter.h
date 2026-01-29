@@ -9,5 +9,5 @@ private:
 public:
 		explicit LowpassFilter(const double cutoffFrequency);
 public:
-		double recalculateOutput(const double input, const double deltaTime);
+		double RecalculateOutput(const double input, const double deltaTime);
 };
